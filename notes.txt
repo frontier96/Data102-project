@@ -1,0 +1,63 @@
+df_GRM_2020_ori = pd.read_csv("2020_US_Region_Mobility_Report.csv")   
+# 2/15/2020 - 12/31/2020    321 days
+# 15 columns
+df_GRM_2021_ori = pd.read_csv("2021_US_Region_Mobility_Report.csv")   
+# 1/1/2021 - 5/2/2021       122 days    > 443 days
+# 15 columns
+
+df_US_counties_ori = pd.read_csv("us-counties.csv")
+df_Global_ori = pd.read_csv("owid-covid-data.csv")
+
+
+df_US_ori = pd.read_csv("us.csv")
+# RangeIndex: 475 entries, 0 to 474
+# Data columns (total 3 columns):
+#  #   Column  Non-Null Count  Dtype 
+# ---  ------  --------------  ----- 
+#  0   date    475 non-null    object
+#  1   cases   475 non-null    int64 
+#  2   deaths  475 non-null    int64 
+# dtypes: int64(2), object(1)
+df_US_states_ori = pd.read_csv("us-states.csv")
+# RangeIndex: 23829 entries, 0 to 23828
+# Data columns (total 5 columns):
+#  #   Column  Non-Null Count  Dtype 
+# ---  ------  --------------  ----- 
+#  0   date    23829 non-null  object
+#  1   state   23829 non-null  object
+#  2   fips    23829 non-null  int64 
+#  3   cases   23829 non-null  int64 
+#  4   deaths  23829 non-null  int64 
+
+df_GRM_combined = pd.concat([df_GRM_2020_ori,df_GRM_2021_ori])
+# Int64Index: 1129557 entries, 0 to 317491
+# Data columns (total 15 columns):
+#  #   Column                                              Non-Null Count    Dtype  
+# ---  ------                                              --------------    -----  
+#  0   country_region_code                                 1129557 non-null  object 
+#  1   country_region                                      1129557 non-null  object 
+#  2   sub_region_1                                        1129114 non-null  object 
+#  3   sub_region_2                                        1106521 non-null  object 
+#  4   metro_area                                          0 non-null        float64
+#  5   iso_3166_2_code                                     22593 non-null    object 
+#  6   census_fips_code                                    1106964 non-null  float64
+#  7   place_id                                            1129557 non-null  object 
+#  8   date                                                1129557 non-null  object 
+#  9   retail_and_recreation_percent_change_from_baseline  745124 non-null   float64
+#  10  grocery_and_pharmacy_percent_change_from_baseline   673189 non-null   float64
+#  11  parks_percent_change_from_baseline                  281815 non-null   float64
+#  12  transit_stations_percent_change_from_baseline       433629 non-null   float64
+#  13  workplaces_percent_change_from_baseline             1101238 non-null  float64
+#  14  residential_percent_change_from_baseline            628836 non-null   float64
+
+
+df_sim_US_T
+df_sim_US_TC
+df_sim_US_TC_2
+
+
+
+
+
+
+
