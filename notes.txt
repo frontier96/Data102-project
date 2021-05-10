@@ -58,6 +58,35 @@ df_sim_US_TC_2
 
 
 
+# new_cases need small smooth
+# DeltaNewCases need L
+# new_deaths S
+# DeltaNewDeath L
+# Death_rate S>tiny
+# DeltaDeathRate S   >tiny
 
 
 
+# Questions to consider for causal inference
+
+# 1. What confounders will you adjust for in order to make your causal claim? If you need to adjust for something that isn’t in the data we provided, consider looking at Census/ACS data (@393).
+# 2. What are the units of observation? Are they individual people or are they counties (or something else)? Do NOT use years (or other time intervals) as the unit of observation.
+# 3. What is your population of interest? Recall that the ATE is an average over a population.
+
+
+https://www.ajmc.com/view/a-timeline-of-covid19-developments-in-2020
+
+March 19 — California Issues Statewide Stay-at-Home Order
+
+March 27 — Trump Signs CARES Act Into Law
+
+May 28 — US COVID-19 Deaths Pass the 100,000 Mark
+
+July 2 — States Reverse Reopening Plans
+
+August 13 — Biden Calls for 3-Month Mask Mandate ( not implemented )
+
+
+
+(1) does attending office hours cause an improvement in homework grades (causal inference)
+(1) does consuming different colors of jellybeans cause acne (causal inference and multiple hypothesis testing),
